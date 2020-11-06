@@ -1,0 +1,39 @@
+Angular 8 Environment Setup 
+=========================== 
+1. Download Node.js latest version from https://nodejs.org/dist/v10.16.0/node... 
+2. Extract it to the desktop in the folder named nodejs(D:\Users\souravgupta\Desktop\nodejs) 
+3. Download the Editor Visual Studio Code from https://code.visualstudio.com/docs/?d... 
+4. Extract it to the desktop in the same folder i.e.nodejs 
+5. Open Visual Studio Code by clicking Code.exe from nodejs folder 
+6. Open Terminal by clicking Terminal - New Terminal and select the cmd as default shell 
+7. SET the PATH and NODE_PATH environment Variable 
+SET PATH=c:\Windows\System32;C:\Pocathon 2020\nodejs
+SET NODE_PATH=C:\Pocathon 2020\nodejs\node_modules 
+C:\Users\souravgupta node -v 
+v10.16.0 
+C:\Users\souravgupta npm -v 
+6.9.0 
+8. Install Angular Cli as a Global Module 
+npm install -g @angular/cli@1 - It will install Angular 5 
+npm install -g @angular/cli@6 - It will install Angular 6 
+npm install -g @angular/cli@7 - It will install Angular 7 
+npm install -g @angular/cli - It will install latest Angular 8 
+Press No when it prompts for google analytics 
+if you have issues with installation set the proxy 
+npm config set http-proxy http://blrproxy.igate.com:8080 
+npm config set https-proxy http://blrproxy.igate.com:8080 
+9. To check the Angular Cli version 
+ng --version 
+10. Create Angular 8 Project in Desktop 
+ng new ng8-app 
+? Would you like to add Angular routing? No 
+? Which stylesheet format would you like to use? CSS 
+11. Open the Project in Visual Studio Code 
+File - Open Folder - ng8-app 
+SET the PATH, NODE_PATH and proxy(if issues are there) 
+12. Install http-server, rimraf as global module and bootstrap as project module 
+npm install -g http-server 
+npm install -g rimraf 
+npm install -S bootstrap@3.3.7 
+13. Run the Angular Project by typing the following command 
+ng serve 
